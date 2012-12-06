@@ -1,0 +1,184 @@
+@CHARSET "UTF-8";
+<link rel="stylesheet" type="text/css" href="reset.css">
+
+html {
+	background: #222;
+}
+
+body {
+	width: 460px;
+	margin: 0 auto;
+	padding: 0 0 40px 0;
+	background: #eee;
+font-family: Helvetica, Arial;
+}
+
+h1 {
+	background-color: #FC7600;
+	color: #fff;
+	font-size: 1.6em;
+	padding: 30px 20px 15px 20px;
+	margin-bottom: 20px;
+}
+
+#header {
+	padding: 0 20px;
+}
+
+.body li {
+	margin-bottom: 10px ;
+}
+
+.body p,
+#header p {
+	color: #555;
+	line-height: 160%;
+	margin-bottom: 10px;
+}
+
+.body p,
+#header small {
+	font-size: 10pt;
+	color: #777;
+	display: block;
+	line-height: 140%;
+}
+
+.body strong,
+#header strong {
+	color: #000;
+	font-weight: bold;
+}
+
+.body a,
+#header a {
+	color: #444;
+}
+
+.body a:hover,
+#header a:hover {
+	color: #000;
+}
+
+form legend {
+	color: #333;
+	padding: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+form {
+	padding: 0 20px 20px 20px;
+}
+
+form, form fieldset input, form fieldset textarea, form label {
+	font-family: Helvetica, Arial;
+	font-size: 12pt;
+}
+form p { position: relative; margin: 10px 0;}
+form p label { position: absolute; top: 0; left: 0;}
+form p br {display: none;}
+
+
+form fieldset p input,
+form fieldset p textarea {
+	display: block;
+	padding: 4px;
+	width: 400px;
+	margin: 0;
+}
+
+form fieldset p label {
+	width: 380px;
+	display: block;
+	margin: 5px 5px 5px 6px;
+	padding: 0;
+}
+
+form fieldset p textarea {
+	padding: 2px;
+	width: 404px;
+}
+
+form fieldset p textarea,
+form fieldset p input {
+	border: solid 1px #ccc;
+}
+form fieldset p label {
+	color: #777;
+}
+
+.body {
+	padding: 0 20px;
+}
+
+h2 {
+	color: #aaa;
+	font-size: 4em;
+	padding: 30px 0 10px 0 ;
+	letter-spacing: -3px;
+	font-weight: normal;
+}
+
+pre {
+	font-size: 10pt;
+	font-family: "Courier New";
+	background: #000;
+	padding: 10px 5px;
+	color: #fff;
+}
+
+tt {
+		font-family: "Courier New";
+		font-weight: bold;
+		color: #000;
+}
+
+.body ul {
+	padding: 0 0 10px 20px;
+	margin: 0 0 0 20px;
+	list-style: disc;
+	font-size: 0.8em;
+}
+
+
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip{
+	margin-left:8px;
+	line-height:20px;
+	height:20px;
+	overflow:hidden;
+	color:#999;
+	font-size:12px;
+}
+.Validform_right{
+	color:#71b83d;
+	padding-left:20px;
+	background:url(../images/right.png) no-repeat left center;
+}
+.Validform_wrong{
+	color:red;
+	padding-left:20px;
+	white-space:nowrap;
+	background:url(../images/error.png) no-repeat left center;
+}
+.Validform_loading{
+	padding-left:20px;
+	background:url(../images/onLoad.gif) no-repeat left center;
+}
+.Validform_error{
+	background-color:#ffe7e7;
+}
+#Validform_msg{color:#7d8289; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; width:280px; -webkit-box-shadow:2px 2px 3px #aaa; -moz-box-shadow:2px 2px 3px #aaa; background:#fff; position:absolute; top:0px; right:50px; z-index:99999; display:none;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');}
+#Validform_msg .iframe{position:absolute; left:0px; top:-1px; z-index:-1;}
+#Validform_msg .Validform_title{line-height:25px; height:25px; text-align:left; font-weight:bold; padding:0 8px; color:#fff; position:relative; background-color:#000;}
+#Validform_msg a.Validform_close:link,#Validform_msg a.Validform_close:visited{line-height:22px; position:absolute; right:8px; top:0px; color:#fff; text-decoration:none;}
+#Validform_msg a.Validform_close:hover{color:#cc0;}
+#Validform_msg .Validform_info{padding:8px;border:1px solid #000; border-top:none; text-align:left;}
+
+
+
+
+
+
+
+
