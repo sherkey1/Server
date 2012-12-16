@@ -61,11 +61,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="text" name="vendor" value="" id="vendor">
 			</p>
 			<p>
-				<label for="pro_time">生产时间   格式：mm/dd/yyyy</label><br />
+				<label for="pro_time">生产时间   格式：yyyy-mm-dd</label><br />
 				<input type="text" name="pro_time" value="" id="pro_time">
 			</p>
 			<p>
-				<label for="an_time">安装时间  格式：mm/dd/yyyy</label><br />
+				<label for="an_time">安装时间  格式：yyyy-mm-dd</label><br />
 				<input type="text" name="an_time" value="" id="an_time">
 			</p>
 			<p>

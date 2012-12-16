@@ -61,8 +61,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      <div><%=request.getAttribute("an_person") %></div> 
      <h2>联系方式</h2>
      <div><%=request.getAttribute("contact") %></div> 
-     <h2>维修日志</h2>
-     <div><%=request.getAttribute("log") %></div> 
+    
      
      
       

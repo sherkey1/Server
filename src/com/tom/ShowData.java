@@ -65,7 +65,7 @@ public class ShowData extends HttpServlet{
 			an_time=rs.getString("an_time");
 			an_person=rs.getString("an_person");
 			contact=rs.getString("contact");
-			log=rs.getString("log");
+		//	log=rs.getString("log");
 			
 			request.setAttribute("manufacturer", manufacturer);
 			request.setAttribute("vendor", vendor);
@@ -73,7 +73,7 @@ public class ShowData extends HttpServlet{
 			request.setAttribute("an_time", an_time);
 			request.setAttribute("an_person", an_person);
 			request.setAttribute("contact", contact);
-			request.setAttribute("log", log);
+		//	request.setAttribute("log", log);
 			
 			request.getRequestDispatcher("/showData.jsp").forward(request, response);
 			
