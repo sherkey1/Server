@@ -39,6 +39,8 @@ public class NewEquip extends HttpServlet implements Filter{
 		response.setCharacterEncoding("UTF-8");
 		
 		String id=request.getParameter("id");
+		String type=request.getParameter("type");
+		String department=request.getParameter("department");
 		String manufacturer=request.getParameter("manufacturer");
 		String vendor=request.getParameter("vendor");
 		String pro_time=request.getParameter("pro_time");
@@ -61,7 +63,7 @@ public class NewEquip extends HttpServlet implements Filter{
 
 	//	String sql="insert into equipment VALUES ('"+id+"','"+manufacturer+"','"+vendor+"','"+pro_time+"','"+an_time+"','"+an_person+"','"+contact+"');";
 	//	String sql="insert into equipment(id,vendor) VALUES ('"+id+"','"+vendor+"');";
-		String sql="insert into equipment VALUES ('"+id+"','"+manufacturer+"','"+vendor+"','"+pro_time+"','"+an_time+"','"+an_person+"','"+contact+"');";
+		String sql="insert into equipment VALUES ('"+id+"','"+type+"','"+department+"','"+manufacturer+"','"+vendor+"','"+pro_time+"','"+an_time+"','"+an_person+"','"+contact+"');";
 		statement.executeUpdate(sql); 
 		
 	

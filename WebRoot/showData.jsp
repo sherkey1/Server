@@ -49,6 +49,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div id="accordion">
 	<h2>信息显示</h2>
         <div><img src="http://wijmo.com/wp-content/themes/wijmov2/img/wijmo_logo.png"></div>
+     <h2>产品型号</h2>
+     <div><%=request.getAttribute("type") %></div>  
+     <h2>所属科室</h2>
+     <div><%=request.getAttribute("department") %></div>  
      <h2>生产厂家</h2>
      <div><%=request.getAttribute("manufacturer") %></div>  
      <h2>销售厂商</h2>

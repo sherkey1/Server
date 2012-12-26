@@ -21,6 +21,8 @@ public class ShowData extends HttpServlet{
 	public static String dbName="test_data";
 	public static String tableName="user";
 	
+	public static String type=null;
+	public static String department=null;
 	public static String manufacturer=null;
 	public static String vendor=null;
 	public static String pro_time=null;
@@ -59,6 +61,8 @@ public class ShowData extends HttpServlet{
 		ResultSet rs = statement.executeQuery(sql); 
 		if(rs.next())
 		{
+			type=rs.getString("type").toString();
+			department=rs.getString("department").toString();
 			manufacturer=rs.getString("manufacturer").toString();
 			vendor=rs.getString("vendor").toString();
 			pro_time=rs.getString("pro_time");
@@ -67,6 +71,8 @@ public class ShowData extends HttpServlet{
 			contact=rs.getString("contact");
 		//	log=rs.getString("log");
 			
+			request.setAttribute("type", type);
+			request.setAttribute("department", department);
 			request.setAttribute("manufacturer", manufacturer);
 			request.setAttribute("vendor", vendor);
 			request.setAttribute("pro_time", pro_time);

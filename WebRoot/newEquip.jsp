@@ -49,8 +49,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<legend>新建设备信息</legend>
 			
 			<p>
-				<label for="id">产品型号</label><br />
+				<label for="id">产品编号</label><br />
 				<input type="text" name="id" value="" id="id">
+			</p>
+			<p>
+				<label for="type">产品型号</label><br />
+				<input type="text" name="type" value="" id="type">
+			</p>
+			<p>
+				<label for="department">所属科室</label><br />
+				<input type="text" name="department" value="" id="department">
 			</p>
 			<p>
 				<label for="manufacturer">生产厂家</label><br />
